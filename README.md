@@ -1,6 +1,8 @@
-![Painel de indicadores](images/indicadores_bacen.png)
-
 # Indicadores Econômicos do BACEN
+
+> 🇺🇸 [English version](README.en.md)
+
+![Painel de indicadores](images/indicadores_bacen.png)
 
 Pipeline em Python que extrai indicadores econômicos das APIs públicas do Banco Central do Brasil e os organiza em duas camadas: **raw** (dados brutos) e **treated** (dados prontos para análise).
 
@@ -48,7 +50,7 @@ indicadores-bacen/
 1. Clone o repositório e entre na pasta:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/indicadores-bacen.git
+git clone https://github.com/MatheusEuzebioMalaquias/indicadores-bacen.git
 cd indicadores-bacen
 ```
 

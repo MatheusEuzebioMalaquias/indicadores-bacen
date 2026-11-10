@@ -1,6 +1,7 @@
 # BACEN Economic Indicators
 
 > 🇧🇷 [Versão em português](README.md)
+
 ![Painel de indicadores](images/indicadores_bacen.png)
 
 Python pipeline that extracts economic indicators from the public APIs of the Central Bank of Brazil (BACEN) and organizes them into two layers: **raw** (source data) and **treated** (ready for analysis).
@@ -49,7 +50,7 @@ indicadores-bacen/
 1. Clone the repository and enter the folder:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/indicadores-bacen.git
+git clone https://github.com/MatheusEuzebioMalaquias/indicadores-bacen.git
 cd indicadores-bacen
 ```
 
