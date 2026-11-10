@@ -1,6 +1,7 @@
 # BACEN Economic Indicators
 
 > 🇧🇷 [Versão em português](README.md)
+![Painel de indicadores](images/indicadores_bacen.png)
 
 Python pipeline that extracts economic indicators from the public APIs of the Central Bank of Brazil (BACEN) and organizes them into two layers: **raw** (source data) and **treated** (ready for analysis).
 

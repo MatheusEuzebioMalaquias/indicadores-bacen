@@ -1,3 +1,5 @@
+![Painel de indicadores](images/indicadores_bacen.png)
+
 # Indicadores Econômicos do BACEN
 
 Pipeline em Python que extrai indicadores econômicos das APIs públicas do Banco Central do Brasil e os organiza em duas camadas: **raw** (dados brutos) e **treated** (dados prontos para análise).
