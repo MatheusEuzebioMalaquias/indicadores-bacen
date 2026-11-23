@@ -75,7 +75,7 @@ pip install -r requirements.txt
 python scripts/indicadores_bacen.py
 ```
 
-Ao final, os arquivos `data/raw/indicadores_economicos.csv` e `data/treated/indicadores_economicos.csv` estarão gerados.
+Ao final, os arquivos `data/raw/indicadores_economicos.csv` e `data/treated/indicadores_economicos.csv` serão gerados.
 
 ## Tecnologias
 
@@ -88,3 +88,8 @@ Ao final, os arquivos `data/raw/indicadores_economicos.csv` e `data/treated/indi
 
 - Os dados são consultados diretamente das APIs públicas do BACEN a cada execução, então os valores refletem a data em que o script rodou.
 - A camada treated segue a mesma lógica do notebook original, que rodava em Spark, adaptada aqui para pandas com saída em CSV.
+
+## Autor
+
+**Matheus Euzebio Malaquias**
+[GitHub](https://github.com/MatheusEuzebioMalaquias)

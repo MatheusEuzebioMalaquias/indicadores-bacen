@@ -15,7 +15,7 @@ Python pipeline that extracts economic indicators from the public APIs of the Ce
 | Selic | SGS (series 432) | Benchmark interest rate |
 | Selic Monthly | SGS (series 4390) | Selic accumulated in the month |
 | IPCA Monthly | SGS (series 433) | Monthly inflation |
-| Selic Expectation, Next Year | Focus API | Market expectations median |
+| Selic Expectation for Next Year | Focus API | Market expectations median |
 | Real Interest Rate | Calculated | 12-month accumulated real rate |
 
 ## Pipeline layers
@@ -27,7 +27,7 @@ Python pipeline that extracts economic indicators from the public APIs of the Ce
 - **Last quote of the day** for USD and EUR.
 - **Monthly close**: last available value of each month.
 - **Daily and monthly change**: percentage variation between periods.
-- **Focus for next year**: keeps only the expectation for the year after the observation year.
+- **Focus for the next year**: keeps only the expectation for the year after the observation year.
 - **Real interest rate**: `((1 + Selic 12M) / (1 + IPCA 12M)) - 1`, with 12-month accumulation by compound interest.
 
 ## Project structure
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 python scripts/indicadores_bacen.py
 ```
 
-When it finishes, the files `data/raw/indicadores_economicos.csv` and `data/treated/indicadores_economicos.csv` will be generated.
+After it finishes, the files `data/raw/indicadores_economicos.csv` and `data/treated/indicadores_economicos.csv` will be generated.
 
 ## Technologies
 
@@ -88,3 +88,8 @@ When it finishes, the files `data/raw/indicadores_economicos.csv` and `data/trea
 
 - The data is queried directly from the public BACEN APIs on every run, so the values reflect the date the script was executed.
 - The treated layer follows the same logic as the original notebook, which ran on Spark, adapted here to pandas with CSV output.
+
+## Author
+
+**Matheus Euzebio Malaquias**
+[GitHub](https://github.com/MatheusEuzebioMalaquias)
